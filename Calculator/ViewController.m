@@ -242,6 +242,7 @@
         }
     }
     
+    //在通知中心设置applicationWillResignActive对UIApplicationWillResignActiveNotification的响应
     UIApplication *app = [UIApplication sharedApplication];
     [[NSNotificationCenter defaultCenter]
      addObserver:self
@@ -249,6 +250,14 @@
      name:UIApplicationWillResignActiveNotification
      object:app];
     
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    for (int i=0; i<3; i++) {
+        UITextField *theField = self.recordsTextFields[i];
+        [theField resignFirstResponder];
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
