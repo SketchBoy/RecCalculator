@@ -15,10 +15,12 @@
 - (void)operatorPressed:(NSString *)screenNum
              Operator:(NSString *)operat;
 - (void)enterPressed:(NSString *)screenNum;
+- (void)updateBuff:(NSString *)screenNum;
 
 @property (nonatomic, strong) NSString *Operantor;
 @property (nonatomic, strong) NSString *Result;
 @property (nonatomic, strong) NSString *CurrentNum;
-@property BOOL IsCalcuEnded;
+
+@property BOOL isEnteringBuff_A;
 
 @end

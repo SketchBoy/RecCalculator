@@ -34,6 +34,7 @@
 {
     if (!_brain) {
         _brain = [[CalculatorBrain alloc] init];
+        _brain.isEnteringBuff_A = YES;
     }
     return _brain;
 }
@@ -60,10 +61,7 @@
     //取消所有运算键高亮显示
     [self cancelAllDigitButtonsHighlighted];
     
-    self.brain.IsCalcuEnded = NO;
-    
     NSString *digit = [sender currentTitle];
-    
     
     //判断是否为@"0"的显示状态
     if ([self.display.text isEqualToString:@"0"] || [self.display.text isEqualToString:@"-0"])
@@ -79,12 +77,17 @@
                 self.display.text = @"-0." ;
             }
             cursorIsInTheMiddleOfEnteringANumber = YES;
+            
+            //向brain实例发送刷新当前屏幕缓存的消息，具体处理由brain内部完成，对于ViewController是透明的
+            [self.brain updateBuff:self.display.text];
+            
             return;
         }
 
         //单独处理数字键"0"
         if([digit isEqualToString:@"0"])
         {
+            //无效返回
             return;
         }
     }
@@ -116,6 +119,9 @@
         }
         self.display.text = [self.display.text stringByAppendingString:digit];
     }
+    
+    //向brain实例发送刷新当前屏幕缓存的消息，具体处理由brain内部完成，对于ViewController是透明的
+    [self.brain updateBuff:self.display.text];
 }
 
 
@@ -134,21 +140,20 @@
     }
     
     //如果brain当前为初始态，只需要更进行后台处理
-    if (self.brain.Result == nil) {
+    if (self.brain.CurrentNum == nil) {
         [self.brain operatorPressed:self.display.text Operator:[sender currentTitle]];
     }
     else
     {
         [self.brain operatorPressed:self.display.text Operator:[sender currentTitle]];
         //如果当前状态为运算未结束，依据brain运算结果刷新屏幕
-        if(!self.brain.IsCalcuEnded)
-        {
-            self.display.text = self.brain.Result;
-        }
+        self.display.text = self.brain.Result;
     }
 
     //标记需要重新输入数字
     self.cursorIsInTheMiddleOfEnteringANumber = NO;
+    //标记重新进入边录入边记录缓存C的状态
+    self.brain.isEnteringBuff_A = NO;
 }
 
 //触摸输入健
@@ -160,8 +165,6 @@
     //如果上次运算出错，无效返回
     if( [self.brain.Result isEqualToString:@"ERRO"])
     {
-        //标记当前运算由“=”结束
-        self.brain.isCalcuEnded = YES;
         return;
     }
     //如果当前为brain初始态，无效返回
@@ -175,8 +178,8 @@
     
     //标记需要重新输入数字
     self.cursorIsInTheMiddleOfEnteringANumber = NO;
-    //标记当前运算由“=”结束
-    self.brain.isCalcuEnded = YES;
+    //标记重新进入边录入边记录缓存A的状态
+    self.brain.isEnteringBuff_A = YES;
 }
 
 //触摸清除键
@@ -193,7 +196,10 @@
     //初始态符号为负标记
     self.IsTheFirstOperatorNegative = NO;
     //标记运算未以“=”结束
-    self.brain.isCalcuEnded = NO;
+    self.brain.isEnteringBuff_A = YES;
+    
+    //取消所有运算键高亮显示
+    [self cancelAllDigitButtonsHighlighted];
     
     //把“C”按钮设置成“AC”
     if ([[self.clearButton currentTitle] isEqualToString:@"C"]) {
@@ -201,10 +207,26 @@
     }
 }
 
-//触摸“%”按键
-- (IBAction)percentPressed:(UIButton *)sender {
-    self.display.text = [NSString stringWithFormat:@"%g", [self.display.text doubleValue] / 100] ;
+//触摸“DEL”按键
+- (IBAction)DelPressed:(UIButton *)sender{
+    
+    if (![self.display.text isEqualToString:@"0"])
+    {
+        unsigned long length = [self.display.text length];
+        if (length == 1) {
+            self.display.text = @"0";
+            self.cursorIsInTheMiddleOfEnteringANumber = NO;
+        }
+        else
+        {
+            self.display.text = [self.display.text substringToIndex:length-1];
+        }
+
+        //向brain实例发送刷新当前屏幕缓存的消息，具体处理由brain内部完成，对于ViewController是透明的
+        [self.brain updateBuff:self.display.text];
+    }
 }
+
 
 //触摸“+/-”按键
 - (IBAction)minusPressed:(id)sender {
@@ -224,6 +246,9 @@
             self.IsTheFirstOperatorNegative = NO;
         }
     }
+    
+    //向brain实例发送刷新当前屏幕缓存的消息，具体处理由brain内部完成，对于ViewController是透明的
+    [self.brain updateBuff:self.display.text];
 }
 
 - (void)viewDidLoad {
@@ -285,6 +310,7 @@
     long num = theButton.tag;
     UITextField* thefield = recordsTextFields[num];
     self.display.text = [NSString stringWithFormat:@"%g", [thefield.text doubleValue]];
+    [self.brain updateBuff:self.display.text];
     self.cursorIsInTheMiddleOfEnteringANumber = NO;
 }
 
@@ -295,7 +321,6 @@
         ((UITextField*)recordsTextFields[i+1]).text = ((UITextField*)recordsTextFields[i]).text;
     }
     ((UITextField*)recordsTextFields[0]).text = self.display.text;
-    
 }
 
 @end

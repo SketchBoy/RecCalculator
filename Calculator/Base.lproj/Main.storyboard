@@ -68,7 +68,7 @@
                                                     <color key="textColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="1.0.001" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="X9m-3C-ucU">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="1.0.005" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="X9m-3C-ucU">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -271,18 +271,6 @@
                                             <action selector="clearPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="652-Sy-c3z"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="coI-io-QYn">
-                                        <rect key="frame" x="146.5" y="5" width="66" height="33"/>
-                                        <color key="backgroundColor" red="0.70838184936369786" green="0.68887716865684079" blue="0.71270718232044206" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <state key="normal" title="%">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="percentPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cCk-g7-SOV"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLy-zJ-PBd">
                                         <rect key="frame" x="217.5" y="5" width="65.5" height="33"/>
                                         <color key="backgroundColor" red="0.96500920810313073" green="0.50812323169975115" blue="0.29006363097342747" alpha="1" colorSpace="calibratedRGB"/>
@@ -475,18 +463,6 @@
                                             <action selector="digitPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5Ze-0L-YmQ"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWZ-rS-Uls">
-                                        <rect key="frame" x="76" y="5" width="65.5" height="33"/>
-                                        <color key="backgroundColor" red="0.70838184936369786" green="0.68887716865684079" blue="0.71270718232044206" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <state key="normal" title="+/-">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="minusPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6uF-qh-tGd"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sA5-mQ-DxO">
                                         <rect key="frame" x="217.5" y="157" width="65.5" height="33"/>
                                         <color key="backgroundColor" red="0.96500920810313073" green="0.50812323169975115" blue="0.29006363097342747" alpha="1" colorSpace="calibratedRGB"/>
@@ -497,6 +473,30 @@
                                         </state>
                                         <connections>
                                             <action selector="enterPressed" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Rju-fq-ZOs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWZ-rS-Uls">
+                                        <rect key="frame" x="76" y="5" width="65.5" height="33"/>
+                                        <color key="backgroundColor" red="0.64650307641261218" green="0.62208639706374591" blue="0.6539191988950277" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="DEL">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="DelPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="f0H-XW-wLq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="coI-io-QYn">
+                                        <rect key="frame" x="146" y="5" width="66" height="33"/>
+                                        <color key="backgroundColor" red="0.70838184936369786" green="0.68887716865684079" blue="0.71270718232044206" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="+/-">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="minusPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0fD-ac-HGm"/>
                                         </connections>
                                     </button>
                                 </subviews>

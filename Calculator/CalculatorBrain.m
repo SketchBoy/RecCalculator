@@ -14,7 +14,6 @@
 
 @implementation CalculatorBrain
 
-@synthesize IsCalcuEnded;
 //运算结果缓存 A
 @synthesize Result;
 //运算符缓存 B
@@ -22,17 +21,39 @@
 //当前运算值缓存 C
 @synthesize CurrentNum;
 
+//在触摸数字键时，包括“+/-”、“%”，有两种状态：
+//第一是边录入边记录缓存A的状态，否则是边录入边记录缓存C的状态
+@synthesize isEnteringBuff_A;
+
 -(void)clearAllBuff
 {
     self.Result = nil;
     self.Operantor = nil;
     self.CurrentNum = nil;
+    
+    //更改为边录入边记录缓存A的状态
+    self.isEnteringBuff_A = YES;
+}
+
+-(void)updateBuff:(NSString *)screenNum
+{
+    if (self.isEnteringBuff_A)
+    {
+        self.Result = screenNum;
+    }
+    else
+    {
+        self.CurrentNum = screenNum;
+    }
 }
 
 -(void)enterPressed:(NSString *)screenNum
 {
-    //如果上次运算以“=”结束，且各个缓存非空
+    ///----------------------------------------------------------------------------
+    ////Fixed Mar24 取消在enterPressed以及operatorPressed中对A的更新处理
+    //如果上次运算以“=”结束，且各个缓存非空（在ViewController.m中已有该条件下才进入该方法）
     //计算并更新A
+    /*
     if(self.IsCalcuEnded)
     {
         [self performOperation];
@@ -42,11 +63,21 @@
     {
         self.CurrentNum = screenNum;
         [self performOperation];
-    }
+    }*/
+    ///----------------------------------------------------------------------------
+    
+    //由于新方法采用在Viewcontroller.m中digitPressed边录入边跟新缓存A
+    [self performOperation];
+    
+    //更改为边录入边记录缓存A的状态
+    self.isEnteringBuff_A = YES;
 }
 
 -(void)operatorPressed:(NSString *)screenNum Operator:(NSString *)operat
 {
+    ///----------------------------------------------------------------------------
+    ////Fixed Mar24 取消在enterPressed以及operatorPressed中对A的更新处理
+    /*
     ///如果brain当前为初始态，只需要把屏幕值注入A与运算符注入B
     if (self.Result == nil || [self.Result isEqualToString:@"ERRO"])
     {
@@ -68,6 +99,23 @@
             self.Operantor = operat;
         }
     }
+    */
+    ///----------------------------------------------------------------------------
+    
+    ///如果brain当前为初始态(self.CurrentNum为空)或者以“=”结束,只需要把运算符注入B
+    if (self.CurrentNum == nil || self.isEnteringBuff_A)
+    {
+        self.Operantor = operat;
+    }
+    ///非初始态（self.CurrentNum为空非空）否则需要计算并跟新A，再注入B
+    else
+    {
+        [self performOperation];
+        self.Operantor = operat;
+    }
+    
+    ///更改为边录入边记录缓存C的状态
+    self.isEnteringBuff_A = NO;
 }
 
 -(void)performOperation
