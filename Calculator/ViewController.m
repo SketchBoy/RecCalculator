@@ -152,6 +152,8 @@
 
     //标记需要重新输入数字
     self.cursorIsInTheMiddleOfEnteringANumber = NO;
+    //恢复符号标记
+    self.IsTheFirstOperatorNegative = NO;
     //标记重新进入边录入边记录缓存C的状态
     self.brain.isEnteringBuff_A = NO;
 }
@@ -209,6 +211,11 @@
 
 //触摸“DEL”按键
 - (IBAction)DelPressed:(UIButton *)sender{
+    
+    if ([self.display.text isEqualToString:@"ERRO"]) {
+        self.display.text = @"0";
+        return;
+    }
     
     if (![self.display.text isEqualToString:@"0"])
     {
@@ -309,9 +316,24 @@
     UIButton *theButton = sender;
     long num = theButton.tag;
     UITextField* thefield = recordsTextFields[num];
+    
+    if (thefield.text == nil || [thefield.text  isEqual: @""]) {
+        return;
+    }
+    
     self.display.text = [NSString stringWithFormat:@"%g", [thefield.text doubleValue]];
     [self.brain updateBuff:self.display.text];
     self.cursorIsInTheMiddleOfEnteringANumber = NO;
+}
+
+///清除对应的记录
+- (IBAction)clearTheRecord:(UIButton *)sender {
+    
+    UIButton *theButton = sender;
+    long num = theButton.tag;
+    UITextField* thefield = recordsTextFields[num];
+    thefield.text = @"";
+
 }
 
 //保存当前display数据，并自动清除最后一组数据
