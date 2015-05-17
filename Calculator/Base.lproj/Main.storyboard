@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="IbT-ET-dW0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="IbT-ET-dW0">
     <dependencies>
         <deployment version="2048" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
@@ -373,7 +373,7 @@
                                 <rect key="frame" x="16" y="148" width="288" height="195"/>
                                 <subviews>
                                     <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvV-GJ-ZNv">
-                                        <rect key="frame" x="145" y="156" width="70" height="36.5"/>
+                                        <rect key="frame" x="145" y="156" width="70" height="37"/>
                                         <color key="backgroundColor" red="0.79124652716090438" green="0.79765450375655056" blue="0.81583793738489863" alpha="1" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -391,7 +391,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sA5-mQ-DxO">
-                                        <rect key="frame" x="217" y="156" width="69" height="36.5"/>
+                                        <rect key="frame" x="217" y="156" width="69" height="37"/>
                                         <color key="backgroundColor" red="0.96500920810313073" green="0.50812323169975115" blue="0.29006363097342747" alpha="1" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -409,7 +409,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5B-BX-P4M">
-                                        <rect key="frame" x="2" y="40" width="70" height="36.5"/>
+                                        <rect key="frame" x="2" y="40" width="70" height="37"/>
                                         <color key="backgroundColor" red="0.79124652716090438" green="0.79765450375655056" blue="0.81583793738489863" alpha="1" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -425,7 +425,7 @@
                                             <action selector="digitPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="15r-4G-bKs"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RU3-Wv-58L">
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RU3-Wv-58L">
                                         <rect key="frame" x="74" y="78" width="69" height="37"/>
                                         <color key="backgroundColor" red="0.79124652716090438" green="0.79765450375655056" blue="0.81583793738489863" alpha="1" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration">
@@ -443,7 +443,7 @@
                                             <action selector="digitPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ml6-bH-U4n"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0u-C8-ysz">
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0u-C8-ysz">
                                         <rect key="frame" x="145" y="78" width="70" height="37"/>
                                         <color key="backgroundColor" red="0.79124652716090438" green="0.79765450375655056" blue="0.81583793738489863" alpha="1" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration">
@@ -461,7 +461,7 @@
                                             <action selector="digitPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2HK-tR-vuf"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z7v-rH-oT8">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z7v-rH-oT8">
                                         <rect key="frame" x="217" y="78" width="69" height="37"/>
                                         <color key="backgroundColor" red="0.96500920810313073" green="0.50812323169975115" blue="0.29006363097342747" alpha="1" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration">
@@ -480,7 +480,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7EF-v7-ezl">
-                                        <rect key="frame" x="74" y="118" width="69" height="36.5"/>
+                                        <rect key="frame" x="74" y="118" width="69" height="37"/>
                                         <color key="backgroundColor" red="0.79124652716090438" green="0.79765450375655056" blue="0.81583793738489863" alpha="1" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -498,7 +498,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21f-jn-yr3">
-                                        <rect key="frame" x="145" y="118" width="70" height="36.5"/>
+                                        <rect key="frame" x="145" y="118" width="70" height="37"/>
                                         <color key="backgroundColor" red="0.79124652716090438" green="0.79765450375655056" blue="0.81583793738489863" alpha="1" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -516,7 +516,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3p-nu-urV">
-                                        <rect key="frame" x="217" y="118" width="69" height="36.5"/>
+                                        <rect key="frame" x="217" y="118" width="69" height="37"/>
                                         <color key="backgroundColor" red="0.96500920810313073" green="0.50812323169975115" blue="0.29006363097342747" alpha="1" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -534,7 +534,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYj-hK-vpB">
-                                        <rect key="frame" x="74" y="156" width="69" height="36.5"/>
+                                        <rect key="frame" x="74" y="156" width="69" height="37"/>
                                         <color key="backgroundColor" red="0.79124652716090438" green="0.79765450375655056" blue="0.81583793738489863" alpha="1" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -552,7 +552,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHO-0r-Je3">
-                                        <rect key="frame" x="2" y="2" width="70" height="36.5"/>
+                                        <rect key="frame" x="2" y="2" width="70" height="37"/>
                                         <color key="backgroundColor" red="1" green="0.33037440950608687" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -570,7 +570,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLy-zJ-PBd">
-                                        <rect key="frame" x="217" y="2" width="69" height="36.5"/>
+                                        <rect key="frame" x="217" y="2" width="69" height="37"/>
                                         <color key="backgroundColor" red="0.96500920810313073" green="0.50812323169975115" blue="0.29006363097342747" alpha="1" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -588,7 +588,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ek7-6g-SQy">
-                                        <rect key="frame" x="74" y="40" width="69" height="36.5"/>
+                                        <rect key="frame" x="74" y="40" width="69" height="37"/>
                                         <color key="backgroundColor" red="0.79124652716090438" green="0.79765450375655056" blue="0.81583793738489863" alpha="1" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -606,7 +606,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zf-TL-IVI">
-                                        <rect key="frame" x="145" y="40" width="70" height="36.5"/>
+                                        <rect key="frame" x="145" y="40" width="70" height="37"/>
                                         <color key="backgroundColor" red="0.79124652716090438" green="0.79765450375655056" blue="0.81583793738489863" alpha="1" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -624,7 +624,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IwZ-NK-UvE">
-                                        <rect key="frame" x="217" y="40" width="69" height="36.5"/>
+                                        <rect key="frame" x="217" y="40" width="69" height="37"/>
                                         <color key="backgroundColor" red="0.96500920810313073" green="0.50812323169975115" blue="0.29006363097342747" alpha="1" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -641,7 +641,7 @@
                                             <action selector="operatorPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4TU-cX-3QU"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sem-Ii-ir4">
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sem-Ii-ir4">
                                         <rect key="frame" x="2" y="78" width="70" height="37"/>
                                         <color key="backgroundColor" red="0.79124652716090438" green="0.79765450375655056" blue="0.81583793738489863" alpha="1" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration">
@@ -660,7 +660,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZO-BO-A6r">
-                                        <rect key="frame" x="2" y="118" width="70" height="36.5"/>
+                                        <rect key="frame" x="2" y="118" width="70" height="37"/>
                                         <color key="backgroundColor" red="0.79124652716090438" green="0.79765450375655056" blue="0.81583793738489863" alpha="1" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -678,7 +678,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lg4-iZ-LZY">
-                                        <rect key="frame" x="2" y="156" width="70" height="36.5"/>
+                                        <rect key="frame" x="2" y="156" width="70" height="37"/>
                                         <color key="backgroundColor" red="0.79124652716090438" green="0.79765450375655056" blue="0.81583793738489863" alpha="1" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -696,7 +696,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWZ-rS-Uls">
-                                        <rect key="frame" x="74" y="2" width="69" height="36.5"/>
+                                        <rect key="frame" x="74" y="2" width="69" height="37"/>
                                         <color key="backgroundColor" red="0.64650307641261218" green="0.62208639706374591" blue="0.6539191988950277" alpha="1" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -714,7 +714,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="coI-io-QYn">
-                                        <rect key="frame" x="145" y="2" width="70" height="36.5"/>
+                                        <rect key="frame" x="145" y="2" width="70" height="37"/>
                                         <color key="backgroundColor" red="0.70838184936369786" green="0.68887716865684079" blue="0.71270718232044206" alpha="1" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -727,9 +727,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="minusPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0fD-ac-HGm"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
