@@ -157,7 +157,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Close" id="Q5S-fB-LhU">
                             <connections>
-                                <action selector="closeCurrentView:" destination="Avy-wh-Wbc" id="UGE-WS-mtT"/>
+                                <segue destination="KXj-xy-BTu" kind="unwind" unwindAction="unwindToStaticCells:" id="0T7-lG-PTE"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -167,8 +167,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZRf-b0-sWz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="KXj-xy-BTu" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="515" y="1082"/>
+            <point key="canvasLocation" x="507" y="1182"/>
         </scene>
         <!--Calculator-->
         <scene sceneID="ufC-wZ-h7g">

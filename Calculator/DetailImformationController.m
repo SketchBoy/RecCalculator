@@ -34,9 +34,10 @@
     self.webview.delegate = self;
 }
 
-- (IBAction)closeCurrentView:(UIBarButtonItem *)sender {
-    [self.navigationController popToRootViewControllerAnimated:YES];
-}
+//- (IBAction)closeCurrentView:(UIBarButtonItem *)sender {
+//    [self.navigationController popToRootViewControllerAnimated:YES];
+//}
+
 - (IBAction)webgoBack:(UIBarButtonItem *)sender {
     [self.webview goBack];
 }
