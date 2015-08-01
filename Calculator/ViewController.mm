@@ -66,7 +66,6 @@
     }
 }
 
-
 //触摸数字键
 - (IBAction)digitPressed:(UIButton *)sender
 {
@@ -401,7 +400,7 @@
     [array writeToFile:filePath atomically:YES];
 }
 
-///查找Documents目录并在其后附加数据文件
+//查找Documents目录并在其后附加数据文件
 - (NSString *)dataFilePath
 {
     //查找Documents路径
@@ -410,7 +409,7 @@
     return [documentsDirectory stringByAppendingPathComponent:@"data.plist"];
 }
 
-///将对应记录返回display
+//将对应记录返回display
 - (IBAction)recordEntered:(UIButton *)sender
 {
     //播放声音
@@ -436,7 +435,7 @@
     self.cursorIsInTheMiddleOfEnteringANumber = NO;
 }
 
-///清除对应的记录
+//清除对应的记录
 - (IBAction)clearTheRecord:(UIButton *)sender {
     //播放声音
     if (player)
