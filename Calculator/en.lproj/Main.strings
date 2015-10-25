@@ -1,0 +1,123 @@
+
+/* Class = "IBUIButton"; normalTitle = "3"; ObjectID = "21f-jn-yr3"; */
+"21f-jn-yr3.normalTitle" = "3";
+
+/* Class = "IBUILabel"; text = "Rec2"; ObjectID = "427-hV-Dnh"; */
+"427-hV-Dnh.text" = "Rec2";
+
+/* Class = "IBUIButton"; normalTitle = "9"; ObjectID = "6zf-TL-IVI"; */
+"6zf-TL-IVI.normalTitle" = "9";
+
+/* Class = "IBUIButton"; normalTitle = "2"; ObjectID = "7EF-v7-ezl"; */
+"7EF-v7-ezl.normalTitle" = "2";
+
+/* Class = "IBUILabel"; text = "Rec3"; ObjectID = "Aof-wp-dAg"; */
+"Aof-wp-dAg.text" = "Rec3";
+
+/* Class = "IBUIButton"; normalTitle = "↪︎"; ObjectID = "Cqg-UN-naF"; */
+"Cqg-UN-naF.normalTitle" = "↪︎";
+
+/* Class = "IBUILabel"; text = "Email："; ObjectID = "Ct5-MS-ROC"; */
+"Ct5-MS-ROC.text" = "Email：";
+
+/* Class = "IBUILabel"; text = "Help:"; ObjectID = "Dui-1w-1xi"; */
+"Dui-1w-1xi.text" = "Help:";
+
+/* Class = "IBUILabel"; text = "保留所有权益    @2015"; ObjectID = "I7k-B7-HbX"; */
+"I7k-B7-HbX.text" = "All Rights Reserved    @2015";
+
+/* Class = "IBUIButton"; normalTitle = "×"; ObjectID = "IwZ-NK-UvE"; */
+"IwZ-NK-UvE.normalTitle" = "×";
+
+/* Class = "IBUIBarButtonItem"; title = "Close"; ObjectID = "Q5S-fB-LhU"; */
+"Q5S-fB-LhU.title" = "Close";
+
+/* Class = "IBUIButton"; normalTitle = "5"; ObjectID = "RU3-Wv-58L"; */
+"RU3-Wv-58L.normalTitle" = "5";
+
+/* Class = "IBUILabel"; text = "Author："; ObjectID = "SFv-g5-EjK"; */
+"SFv-g5-EjK.text" = "Author：";
+
+/* Class = "IBUILabel"; text = "WilliamChang"; ObjectID = "Sa9-TD-qWR"; */
+"Sa9-TD-qWR.text" = "WilliamChang";
+
+/* Class = "IBUIButton"; normalTitle = "4"; ObjectID = "Sem-Ii-ir4"; */
+"Sem-Ii-ir4.normalTitle" = "4";
+
+/* Class = "IBUIButton"; normalTitle = "↪︎"; ObjectID = "TFD-5G-v96"; */
+"TFD-5G-v96.normalTitle" = "↪︎";
+
+/* Class = "IBUIButton"; normalTitle = "+"; ObjectID = "U3p-nu-urV"; */
+"U3p-nu-urV.normalTitle" = "+";
+
+/* Class = "IBUILabel"; text = "1.1.002"; ObjectID = "X9m-3C-ucU"; */
+"X9m-3C-ucU.text" = "1.1.002";
+
+/* Class = "IBUILabel"; text = "Version："; ObjectID = "YP6-Lr-s5U"; */
+"YP6-Lr-s5U.text" = "Version：";
+
+/* Class = "IBUIButton"; normalTitle = "6"; ObjectID = "Z0u-C8-ysz"; */
+"Z0u-C8-ysz.normalTitle" = "6";
+
+/* Class = "IBUIButton"; normalTitle = "÷"; ObjectID = "aLy-zJ-PBd"; */
+"aLy-zJ-PBd.normalTitle" = "÷";
+
+/* Class = "IBUIButton"; normalTitle = "1"; ObjectID = "cZO-BO-A6r"; */
+"cZO-BO-A6r.normalTitle" = "1";
+
+/* Class = "IBUIButton"; normalTitle = "+/-"; ObjectID = "coI-io-QYn"; */
+"coI-io-QYn.normalTitle" = "+/-";
+
+/* Class = "IBUIButton"; normalTitle = "8"; ObjectID = "ek7-6g-SQy"; */
+"ek7-6g-SQy.normalTitle" = "8";
+
+/* Class = "IBUILabel"; text = "Rec1"; ObjectID = "euQ-SJ-CeL"; */
+"euQ-SJ-CeL.text" = "Rec1";
+
+/* Class = "IBUILabel"; text = "walliamsblog.blog.ustc.edu.cn"; ObjectID = "grP-OW-8Ua"; */
+"grP-OW-8Ua.text" = "walliamsblog.blog.ustc.edu.cn";
+
+/* Class = "IBUIButton"; normalTitle = "Save"; ObjectID = "lg4-iZ-LZY"; */
+"lg4-iZ-LZY.normalTitle" = "Save";
+
+/* Class = "IBUIButton"; normalTitle = "."; ObjectID = "lvV-GJ-ZNv"; */
+"lvV-GJ-ZNv.normalTitle" = ".";
+
+/* Class = "IBUINavigationItem"; title = "Details"; ObjectID = "m1m-8f-Qb6"; */
+"m1m-8f-Qb6.title" = "Details";
+
+/* Class = "IBUILabel"; text = "0"; ObjectID = "mdJ-Uu-6uO"; */
+"mdJ-Uu-6uO.text" = "0";
+
+/* Class = "IBUILabel"; text = "zhangwenlue2011@163.com"; ObjectID = "nXr-rH-8kH"; */
+"nXr-rH-8kH.text" = "zhangwenlue2011@163.com";
+
+/* Class = "IBUIButton"; normalTitle = "7"; ObjectID = "o5B-BX-P4M"; */
+"o5B-BX-P4M.normalTitle" = "7";
+
+/* Class = "IBUIButton"; normalTitle = "↪︎"; ObjectID = "pFJ-nz-0oS"; */
+"pFJ-nz-0oS.normalTitle" = "↪︎";
+
+/* Class = "IBUIBarButtonItem"; title = "↩︎"; ObjectID = "s3j-96-veP"; */
+"s3j-96-veP.title" = "Back";
+
+/* Class = "IBUIButton"; normalTitle = "="; ObjectID = "sA5-mQ-DxO"; */
+"sA5-mQ-DxO.normalTitle" = "=";
+
+/* Class = "IBUIButton"; normalTitle = "0"; ObjectID = "uYj-hK-vpB"; */
+"uYj-hK-vpB.normalTitle" = "0";
+
+/* Class = "IBUINavigationItem"; title = "About"; ObjectID = "vNa-N8-EID"; */
+"vNa-N8-EID.title" = "About";
+
+/* Class = "IBUINavigationItem"; title = "Calculator"; ObjectID = "wcb-Oo-XL5"; */
+"wcb-Oo-XL5.title" = "Calculator";
+
+/* Class = "IBUIButton"; normalTitle = "AC"; ObjectID = "xHO-0r-Je3"; */
+"xHO-0r-Je3.normalTitle" = "AC";
+
+/* Class = "IBUIButton"; normalTitle = "DEL"; ObjectID = "yWZ-rS-Uls"; */
+"yWZ-rS-Uls.normalTitle" = "DEL";
+
+/* Class = "IBUIButton"; normalTitle = "-"; ObjectID = "z7v-rH-oT8"; */
+"z7v-rH-oT8.normalTitle" = "-";

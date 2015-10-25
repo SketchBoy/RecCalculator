@@ -1,0 +1,8 @@
+/* 
+  InfoPlist.strings
+  Calculator
+
+  Created by WilliamChang on 4/1/15.
+  Copyright (c) 2015 WilliamChang. All rights reserved.
+*/
+CFBundleDisplayName = "可记录计算器";
