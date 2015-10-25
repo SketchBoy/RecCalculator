@@ -26,7 +26,7 @@
 @implementation ViewController
 {
     AVAudioPlayer *player;
-    SystemSoundID sound;//系统声音的id 取值范围为：1000-2000  
+    SystemSoundID sound;
 }
 
 @synthesize display;
