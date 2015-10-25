@@ -18,7 +18,6 @@
 		3C60B88A1ACB094100A3CB89 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C60B88C1ACB094100A3CB89 /* InfoPlist.strings */; };
 		3C6148611AEE89580024D4EC /* resolveFormula.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C61485F1AEE89580024D4EC /* resolveFormula.cpp */; };
 		3C6148631AEFC3510024D4EC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6148621AEFC3510024D4EC /* AVFoundation.framework */; };
-		3C6148671AEFC68E0024D4EC /* xqg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3C6148661AEFC68E0024D4EC /* xqg.mp3 */; };
 		3C6148691AEFCD300024D4EC /* btw.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3C6148681AEFCD300024D4EC /* btw.wav */; };
 		3C61486B1AEFCF610024D4EC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C61486A1AEFCF610024D4EC /* AudioToolbox.framework */; };
 		3C742F541ACEE65500C15DBC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C742F561ACEE65500C15DBC /* LaunchScreen.xib */; };
@@ -61,7 +60,6 @@
 		3C61485F1AEE89580024D4EC /* resolveFormula.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = resolveFormula.cpp; sourceTree = "<group>"; };
 		3C6148601AEE89580024D4EC /* resolveFormula.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resolveFormula.h; sourceTree = "<group>"; };
 		3C6148621AEFC3510024D4EC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		3C6148661AEFC68E0024D4EC /* xqg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = xqg.mp3; sourceTree = "<group>"; };
 		3C6148681AEFCD300024D4EC /* btw.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btw.wav; sourceTree = "<group>"; };
 		3C61486A1AEFCF610024D4EC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		3C742F5A1ACEF55400C15DBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreenEN.xib; sourceTree = "<group>"; };
@@ -129,7 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				3C6148681AEFCD300024D4EC /* btw.wav */,
-				3C6148661AEFC68E0024D4EC /* xqg.mp3 */,
 				3C742F591ACEF55400C15DBC /* LaunchScreenEN.xib */,
 				3C742F561ACEE65500C15DBC /* LaunchScreen.xib */,
 				3C0542C51AB57628001A396B /* AppDelegate.h */,
@@ -270,7 +267,6 @@
 				3C2E2A381B0824B70057F2AB /* Images.xcassets in Resources */,
 				3C60B88A1ACB094100A3CB89 /* InfoPlist.strings in Resources */,
 				3C742F5B1ACEF55400C15DBC /* LaunchScreenEN.xib in Resources */,
-				3C6148671AEFC68E0024D4EC /* xqg.mp3 in Resources */,
 				3C0542CD1AB57628001A396B /* Main.storyboard in Resources */,
 				3C6148691AEFCD300024D4EC /* btw.wav in Resources */,
 			);
